@@ -1,0 +1,4 @@
+<launch>
+  <include file="$(find jet_bringup)/launch/jet_real.launch"/>
+  <node name="sense_and_avoid" pkg="lab2_sense_and_avoid" type="sense_and_avoid"/>
+</launch>

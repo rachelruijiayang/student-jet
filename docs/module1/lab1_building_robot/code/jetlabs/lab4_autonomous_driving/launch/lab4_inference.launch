@@ -1,0 +1,4 @@
+<launch>
+  <!--<include file="$(find jet_bringup)/launch/jet_real.launch"/>-->
+  <node name="drive_inference" pkg="lab4_autonomous_driving" type="drive_inference"/>
+</launch>

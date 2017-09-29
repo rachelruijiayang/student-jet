@@ -1,0 +1,4 @@
+<launch>
+  <include file="$(find jet_bringup)/launch/jet_real.launch"/>
+  <node name="basic_cv" pkg="lab3_computer_vision" type="basic_cv"/>
+</launch>

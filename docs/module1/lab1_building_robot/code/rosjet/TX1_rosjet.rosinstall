@@ -1,0 +1,13 @@
+# Image Dependencies
+- tar:
+    local-name: libraries/image_common/camera_info_manager
+    uri: https://github.com/ros-gbp/image_common-release/archive/release/kinetic/camera_info_manager/1.11.10-0.tar.gz
+    version: image_common-release-release-kinetic-camera_info_manager-1.11.10-0
+- tar:
+    local-name: libraries/image_common/image_transport
+    uri: https://github.com/ros-gbp/image_common-release/archive/release/kinetic/image_transport/1.11.10-0.tar.gz
+    version: image_common-release-release-kinetic-image_transport-1.11.10-0
+- tar:
+    local-name: libraries/vision_opencv/cv_bridge
+    uri: https://github.com/ros-gbp/vision_opencv-release/archive/release/kinetic/cv_bridge/1.11.12-0.tar.gz
+    version: vision_opencv-release-release-kinetic-cv_bridge-1.11.12-0

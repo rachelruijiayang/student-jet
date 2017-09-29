@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<launch>
+
+  <include file="$(find jet_bringup)/launch/jet_real.launch" />
+
+  <node pkg="lab8_balancing" name="lab8_balancing" type="lab8_balancing">
+
+</launch>

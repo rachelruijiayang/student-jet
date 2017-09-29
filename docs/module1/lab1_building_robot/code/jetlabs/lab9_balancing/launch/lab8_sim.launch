@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<launch>
+
+  <include file="$(find jet_gazebo)/launch/jet.launch">
+    <arg name="world_name" value="$(find lab8_balancing)/gazebo/balancingbeam.world"/>
+  </include>
+
+  <!--
+  <node pkg="lab8_balancing" name="lab8_balancing" type="lab8_balancing">
+  -->
+
+</launch>

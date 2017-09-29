@@ -1,0 +1,4 @@
+<launch>
+  <include file="$(find jet_bringup)/launch/jet_real.launch"/>
+  <node name="dead_reckoning" pkg="lab5_dead_reckoning" type="dead_reckoning" output="screen"/>
+</launch>

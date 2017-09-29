@@ -1,0 +1,9 @@
+name: "JetNetwork"
+input: "data"
+input_shape {
+  dim: 1 # batchsize
+  dim: 3 # number of colour channels - rgb
+  dim: 80 # width
+  dim: 60 # height
+}
+#IMPLEMENT NETWORK HERE

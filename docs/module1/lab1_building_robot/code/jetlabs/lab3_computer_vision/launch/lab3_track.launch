@@ -1,0 +1,4 @@
+<launch>
+  <include file="$(find jet_bringup)/launch/jet_real.launch"/>
+  <node name="vision_tracking" pkg="lab3_computer_vision" type="vision_tracking"/>
+</launch>

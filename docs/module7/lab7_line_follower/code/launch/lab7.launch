@@ -1,0 +1,9 @@
+<launch>
+  <param name="Kp" type="double" value="0.0" />
+  <param name="Ki" type="double" value="0.0" />
+  <param name="Kd" type="double" value="0.0" />
+
+  <include file="$(find jet_bringup)/launch/jet_real.launch"/>
+  <node name="line_detector" pkg="lab8_line_follower" type="line_detector"/>
+  <node name="line_pid" pkg="lab8_line_follower" type="line_pid"/>
+</launch>

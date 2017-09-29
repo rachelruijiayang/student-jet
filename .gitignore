@@ -1,0 +1,8 @@
+/docs/build/**/**/*
+/docs/build/**/*
+/docs/module4/lab4_autonomous_driving/code/neuralnetwork/models
+/docs/module4/lab4_autonomous_driving/code/data/*
+/docs/module4/lab4_autonomous_driving/code/resources/**/**/*
+/docs/module4/lab4_autonomous_driving/solution/neuralnetwork/models
+/docs/module4/lab4_autonomous_driving/solution/data/*
+/docs/module4/lab4_autonomous_driving/solution/resources/**/**/*

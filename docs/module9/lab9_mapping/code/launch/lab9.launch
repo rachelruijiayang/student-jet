@@ -1,0 +1,6 @@
+<launch>
+  <include file="$(find jet_bringup)/launch/jet_real.launch"/>
+  <node pkg="tf" type="static_transform_publisher" name="odom_to_map"
+      args="0 0 0 0 0 0 /map /odom 100" />
+  <node name="mapping" pkg="lab9_mapping" type="mapping"/>
+</launch>

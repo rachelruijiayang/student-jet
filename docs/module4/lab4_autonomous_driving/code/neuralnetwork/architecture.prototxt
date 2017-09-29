@@ -1,0 +1,59 @@
+name: "JetNetwork"
+layer {
+  name: "data"
+  type: "Data"
+  top: "data"
+  top: "label"
+  include {
+    phase: TRAIN
+  }
+  transform_param {
+    mirror: true
+    #crop_size: 60
+    mean_file: "../resources/data/mean_image.binaryproto"
+  }
+  data_param {
+    source: "../resources/data/train_lmdb"
+    batch_size: 10
+    backend: LMDB
+  }
+}
+layer {
+  name: "data"
+  type: "Data"
+  top: "data"
+  top: "label"
+  include {
+    phase: TEST
+  }
+  transform_param {
+    mirror: false
+    #crop_size: 60
+    mean_file: "../resources/data/mean_image.binaryproto"
+  }
+  data_param {
+    source: "../resources/data/test_lmdb"
+    batch_size: 10
+    backend: LMDB
+  }
+}
+
+## IMPLEMENT NETWORK HERE
+
+layer {
+  name: "accuracy"
+  type: "Accuracy"
+  bottom: "<LAST_LAYER>"
+  bottom: "label"
+  top: "accuracy"
+  include {
+    phase: TEST
+  }
+}
+layer {
+  name: "loss"
+  type: "SoftmaxWithLoss"
+  bottom: "<LAST_LAYER>"
+  bottom: "label"
+  top: "loss"
+}

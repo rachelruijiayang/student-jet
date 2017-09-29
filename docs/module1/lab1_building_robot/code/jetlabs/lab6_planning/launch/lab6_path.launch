@@ -1,0 +1,8 @@
+<launch>
+  <include file="$(find jet_navigation)/launch/jet_navigation.launch">
+    <arg name="delta_x" value="0.0"/>
+    <arg name="delta_y" value="0.0"/>
+    <arg name="stationary" value="true"/>
+    <arg name="map_file" value="$(find lab6_planning)/maps/maze1.yaml"/>
+  </include>
+</launch>

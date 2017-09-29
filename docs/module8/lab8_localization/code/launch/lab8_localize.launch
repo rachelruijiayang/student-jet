@@ -1,0 +1,10 @@
+<launch>
+  <rosparam param="obstacle_map">[0, 0, 1, 0, 1, 0, 0, 0]</rosparam>
+  <node name="localization" pkg="lab8_localization" type="localization" output="screen">
+    <param name="course_length" value="200"/>
+    <param name="move_std_dev" value="0.1"/>
+    <param name="hit_weight_ratio" value="100.0"/>
+    <param name="stop_threshold" value="0.2"/>
+    <param name="num_particles" value="1000"/>
+  </node>
+</launch>

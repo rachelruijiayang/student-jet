@@ -1,0 +1,5 @@
+<launch>
+  <include file="$(find jet_bringup)/launch/jet_real.launch"/>
+  <node name="loc_line_detector" pkg="lab8_localization" type="loc_line_detector"/>
+  <node name="loc_line_pid" pkg="lab8_localization" type="loc_line_pid"/>
+</launch>
