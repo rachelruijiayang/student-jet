@@ -60,12 +60,8 @@ Force USB Recovery Mode:
 
 Once the install is complete, you can go ahead and disconnect the micro USB cable.  Now we will install the rosjet libraries and utilities.  On your host computer, download the lab1 zip file from your instructor.
 
-* On your host computer, download the lab1 zip file from your instructor, then unzip the folder.
-
-  `wget http://instructorurl/lab1_building_robot-code.zip; unzip lab1_building_robot-code.zip; rm lab1_building_robot-code.zip`
-
 * Connect to the Jetson via ssh
-  The username is 'ubuntu' and the password is 'ubuntu'. You can find it's ip address by looking at your router's configuration.
+  The username is 'ubuntu' and the password is 'ubuntu'. You can find its ip address (referred to from now on by JETSONURL) by typing in `ifconfig` into the Jetson's terminal.
 
 * On the Jetson, install git
 
@@ -77,7 +73,7 @@ Once the install is complete, you can go ahead and disconnect the micro USB cabl
 
 * On your host computer, extract the lab1 zip file.  Then copy the `rosjet` folder to the Jetson
 
-  `scp -r ~/lab1_building_robot-code/rosjet ubuntu@JETSONURL:~/catkin_ws/src/rosjet`
+  `scp -r [student-jet path to lab1_building_robot-code]/lab1_building_robot-code/rosjet ubuntu@JETSONURL:~/catkin_ws/src/rosjet`
 
 * On the Jetson, run the ros configuration script
 
@@ -88,14 +84,6 @@ Once the install is complete, you can go ahead and disconnect the micro USB cabl
 * On the host computer, create a folder for ROS packages:
 
   `mkdir -p ~/catkin_ws/src; cd ~/catkin_ws/src`
-
- * On the host computer, copy the `jethost` folder to the workspace
-
-  `cp -r ~/lab1_building_robot-code/jethost ~/catkin_ws/src/jethost`
-
- * On the host computer, run the jethost installation script
-
-  `./jethost/jethost_install.sh`
 
 ## Configuring ROS Environment Parameters
 
