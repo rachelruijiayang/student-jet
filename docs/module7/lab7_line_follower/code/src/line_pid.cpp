@@ -3,7 +3,7 @@
 #include <dynamic_reconfigure/server.h>
 #include "geometry_msgs/Twist.h"
 #include "std_msgs/Float32.h"
-#include "lab8_line_follower/PidConfig.h"
+#include "lab7_line_follower/PidConfig.h"
 
 geometry_msgs::Twist vel_msg;
 std_msgs::Float32 error_msg;
